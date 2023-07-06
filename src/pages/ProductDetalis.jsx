@@ -6,7 +6,7 @@ const ProductDetalis = () => {
     const {detalID}= useParams()
     console.log(detalID);
     useEffect(() => {
-        fetch(`http://localhost:3000/products/${detalID}`)
+        fetch(`https://fakestoreapi.com/products/${detalID}`)
         .then((res) => res.json())
         .then((product) => {
             console.log(product);
