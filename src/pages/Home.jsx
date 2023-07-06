@@ -9,6 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         getAllProducts()
+        getAllCategory()
         
     },[])
     const getAllProducts = () => {
@@ -19,9 +20,7 @@ const Home = () => {
             setProducts(data)
         })
     }
-    useEffect(() => {
-        getAllCategory()
-    },[])
+    
     const getAllCategory = () => {
         fetch('https://fakestoreapi.com/products/categories')
         .then((res) => res.json())
