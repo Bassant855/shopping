@@ -39,8 +39,8 @@ const Home = () => {
         <div className="list">
                 {
                     categories.map((category) => {
-                       return <Link to={`category/${category.value}`} key={category.id} 
-                       className="btn btn-secondary btn-sm m-2">{category.value}</Link>
+                       return <Link to={`category/${category}`} key={category} 
+                       className="btn btn-secondary btn-sm m-2">{category}</Link>
                     })
                 }
            
