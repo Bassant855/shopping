@@ -12,7 +12,7 @@ const Home = () => {
         
     },[])
     const getAllProducts = () => {
-        fetch('http://localhost:3000/products')
+        fetch('https://fakestoreapi.com/products')
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
@@ -23,7 +23,7 @@ const Home = () => {
         getAllCategory()
     },[])
     const getAllCategory = () => {
-        fetch('http://localhost:3000/category')
+        fetch('https://fakestoreapi.com/products/categories')
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
